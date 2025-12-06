@@ -111,37 +111,37 @@ This helps lenders in:
                 │ Web UI for Credit Risk Score  │
                 │ Real-Time Prediction          │
                 └──────────────────────────────┘
-```
 
 
+                
 
 ## 📂 Project Structure
 
-ML-PROJECT-CREDIT-RISK-MODEL/
-
-│
-├── artifacts/
-
-│   └── model_data.joblib            # Trained model + scaler + feature lists
-
-│
-├── main.py                          # Streamlit app
-
-├── prediction_helper.py             # Prediction logic
-
-├── requirements.txt                 # Python dependencies
-
-├── README.md
-
-└── .gitignore
+    ML-PROJECT-CREDIT-RISK-MODEL/
+    
+    │
+    ├── artifacts/
+    
+    │   └── model_data.joblib            # Trained model + scaler + feature lists
+    
+    │
+    ├── main.py                          # Streamlit app
+    
+    ├── prediction_helper.py             # Prediction logic
+    
+    ├── requirements.txt                 # Python dependencies
+    
+    ├── README.md
+    
+    └── .gitignore
 
 ## 📂 Dataset Summary
 
-| File              | Description                             |
-| ----------------- | --------------------------------------- |
-| `customers.csv`   | Customer demographics                   |
-| `loans.csv`       | Loan application details                |
-| `bureau_data.csv` | Credit bureau history, DPD, loan months |
+    | File              | Description                             |
+    | ----------------- | --------------------------------------- |
+    | `customers.csv`   | Customer demographics                   |
+    | `loans.csv`       | Loan application details                |
+    | `bureau_data.csv` | Credit bureau history, DPD, loan months |
 
 Target Variable:
 
