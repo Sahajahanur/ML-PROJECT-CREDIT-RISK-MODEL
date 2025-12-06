@@ -41,94 +41,23 @@ This helps lenders in:
 
 ## ✅ FLOW DIAGRAM
 
-FLOW PIPELINE
-=============
+    flowchart TD
+    A[Raw Data] --> B[Preprocessing]
+    
+    B --> C[Business Rules]
+    
+    C --> D[Feature Engineering]
+    
+    D --> E[Feature Selection]
+    
+    E --> F[SMOTE + Tomek]
+    
+    F --> G[Logistic + Optuna]
+    
+    G --> H[Evaluation]
+    
+    H --> I[Deployment - Streamlit]
 
-1) RAW DATA
------------
-- customers.csv
-- loans.csv
-- bureau_data.csv
-
-       |
-       v
-
-2) DATA PREPROCESSING
----------------------
-- Merge on cust_id
-- Missing value handling
-- Fix category labels
-- Remove invalid records
-
-       |
-       v
-
-3) BUSINESS RULE CHECKS
------------------------
-- Processing Fee < 3%
-- GST < 20%
-- Net Disbursement <= Loan Amount
-
-       |
-       v
-
-4) FEATURE ENGINEERING
-----------------------
-- Loan_to_Income Ratio
-- Delinquency Ratio
-- Avg DPD per Delinquency
-- Credit Utilization Ratio
-
-       |
-       v
-
-5) FEATURE SELECTION
---------------------
-- Remove multicollinearity (VIF)
-- Information Value (IV > 0.02)
-- Retain strong predictors
-
-       |
-       v
-
-6) CLASS IMBALANCE HANDLING
----------------------------
-- SMOTE + Tomek Links
-
-       |
-       v
-
-7) MODEL TRAINING
------------------
-- Logistic Regression
-- Optuna Tuning
-
-       |
-       v
-
-8) MODEL EVALUATION
--------------------
-- Confusion Matrix
-- ROC Curve & AUC
-- KS Statistic
-- Classification Report
-
-       |
-       v
-
-9) SAVE ARTIFACTS
------------------
-- model.joblib
-- scaler.joblib
-- feature_list.json
-
-       |
-       v
-
-10) DEPLOYMENT
---------------
-- Streamlit Cloud App
-- Real-time prediction
 
 ## 📂 Project Structure
 
